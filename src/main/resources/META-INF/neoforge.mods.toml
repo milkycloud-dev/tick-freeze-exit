@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="tickfreezeexit"
+version="1.0.0"
+displayName="Tick Freeze Exit"
+authors="milkycloud-dev"
+logoFile="tickfreezeexit_icon.png"
+displayURL="https://github.com/milkycloud-dev/tick-freeze-exit"
+description='''
+Halts a dedicated server JVM with exit code 1 when the server thread stops ticking for minutes, or ends while the JVM stays alive, so the host panel restarts it.
+'''
+
+[[dependencies.tickfreezeexit]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="SERVER"
+
+[[dependencies.tickfreezeexit]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="SERVER"
